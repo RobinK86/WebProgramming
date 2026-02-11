@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS Activity</title>
+</head>
+
+<body>
+
+    <h2 id="message">Welcome Students</h2>
+
+    <!-- First Button with change messsage function -->
+    <button onclick="changeMessage()">Click Me</button>
+
+    <!-- Second Button with Alert -->
+    <button onclick="showAlert()">Show Alert</button>
+
+    <!--Added Breaks-->
+    <br><br>
+
+    <!-- Input Box -->
+    <input type="text" id="userInput" placeholder="Enter Something Here">
+    <button onclick="printInput()">Submit</button>
+
+    <script>
+
+        // Function 1: Change text AND color
+        function changeMessage() {
+            document.getElementById("message").innerHTML = "JavaScript is Fun!";
+            document.getElementById("message").style.color = "blue";
+        }
+
+        // Function 2: Show alert
+        function showAlert() {
+            alert("This is an alert message!");
+            console.log("Alert button was clicked");
+        }
+
+        // Function 3: Print input value to console
+        function printInput() {
+            var inputValue = document.getElementById("userInput").value;
+            console.log("User typed: " + inputValue);
+            alert("User typed: " + inputValue);
+        }
+
+    </script>
+
+</body>
+</html>

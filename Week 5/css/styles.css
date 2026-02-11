@@ -1,0 +1,196 @@
+/*
+Student Name: Robin Kelley
+File Name: styles.css
+Date: 2/2/2026
+*/
+
+/* =========================
+   CSS Reset
+========================= */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   Page Layout (Center Card)
+========================= */
+body{
+    font-family: 'Dosis', sans-serif;
+    color: #231330;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+    background: #111;
+    padding: 24px;
+}
+
+/* =========================
+   Business Card Container
+========================= */
+.card{
+    width: 3.5in;
+    height: 2in;
+
+    position: relative;
+    overflow: hidden;
+
+    border: 2px solid #908996;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+/* =========================
+   Top Section (80%)
+========================= */
+.top{
+    background-color: #a492b3;
+    height: 80%;
+
+    padding-left: 1.35in;   /* space for photo */
+    padding-top: 8px;      /* reduced from 14px */
+    padding-right: 12px;   /* slightly reduced */
+}
+
+/* =========================
+   Bottom Section (20%)
+========================= */
+.bottom{
+    background-color: #231330;
+    height: 20%;
+
+    padding-left: 1.35in;
+    padding-right: 0.75in;  /* reserved QR space */
+    padding-top: 4px;       /* small vertical adjustment */
+
+    display: flex;
+    align-items: center;
+}
+
+/* =========================
+   Photo Column
+========================= */
+.photo-column{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 1.25in;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Photo */
+.photo{
+    width: 1in;
+    height: 1.55in;
+    object-fit: cover;
+
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+/* =========================
+   Text Styling (Tightened)
+========================= */
+.name{
+    font-size: 19px;
+    line-height: 1.15;
+    margin-bottom: 4px;     /* a bit more breathing room */
+}
+
+.title{
+    font-size: 11px;
+    line-height: 1.15;
+    margin-bottom: 8px;     /* clearer separation from details */
+}
+
+.line{
+    font-size: 10.5px;
+    line-height: 1.2;       /* KEY: readability */
+    margin-bottom: 5px;     /* not smashed, still compact */
+}
+
+
+/* Prevent awkward link wrapping */
+.line a{
+    display: inline-block;
+}
+
+/* Bottom text */
+.bottom-text{
+    color: #fff;
+    font-size: 10.5px;
+    line-height: 1.15;
+}
+
+/* =========================
+   QR Code
+========================= */
+.qr{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+    width: 0.55in;
+    height: 0.55in;
+
+    object-fit: contain;
+
+    background: #fff;
+    padding: 4px;
+    border-radius: 6px;
+}
+
+/* =========================
+   Link Styling Requirement
+========================= */
+a:link{
+    color: #0000ee;
+}
+
+a:visited{
+    color: #551a8b;
+}
+
+a:hover{
+    color: #0b66c3;
+}
+
+/* =========================
+   Print / PDF Styling
+========================= */
+@media print{
+    body{
+        background: #fff !important;
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    .card{
+        box-shadow: none !important;
+        border: 1px solid #000;
+    }
+
+    .top,
+    .bottom{
+        background: #fff !important;
+        color: #000 !important;
+    }
+
+    .bottom-text{
+        color: #000 !important;
+    }
+
+    a:link,
+    a:visited,
+    a:hover{
+        color: #000 !important;
+        text-decoration: none;
+    }
+}
