@@ -1,5 +1,7 @@
 // script.js
 // Week 06 - Age Prime Checker
+// Robin Kelley
+// 2/19/2026
 
 function calculateAge(birthYear) {
   // Grab year from user input and calculate age
