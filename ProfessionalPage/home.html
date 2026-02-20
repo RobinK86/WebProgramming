@@ -3,16 +3,15 @@ File Name: template.html
 Student Name: Robin Kelley
 Course: Web Programming
 Date: 02/17/2026
-Description: This is a template HTML file for the portfolio website. It includes a header with navigation, a main content area with a hero section and content blocks, and a footer. The structure is designed to be responsive and accessible, following best practices for web development.
+Description: Home Page with introduction and navigation to other pages.
 -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Portfolio website for Robin Kelley, aspiring Computer Science educator and Programming I Teaching Assistant." />
-    <title>Template | Robin Kelley Portfolio</title>
+    <title>Home | Robin Kelley Portfolio</title>
 
     <!-- Google Font (Poppins) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -52,59 +51,57 @@ Description: This is a template HTML file for the portfolio website. It includes
     </header>
 
     <main id="main">
-        <!-- Page hero / title -->
-        <section class="page-hero">
-            <div class="container">
-                <h1 class="page-title">Page Title</h1>
-                <p class="page-subtitle">
-                Short subtitle describing the purpose of this page.
+
+    <!-- Hero Section with Image + Intro -->
+    <section class="hero">
+        <div class="container hero-inner">
+
+            <div class="hero-text">
+                <h1>Hi, I'm Robin Kelley</h1>
+                <p class="hero-tagline">
+                    Computer Science Educator • Teaching Assistant • Lifelong Learner
                 </p>
+
+                <p class="hero-description">
+                    I am a high school Computer Science teacher and Programming I Teaching Assistant 
+                    passionate about making technology accessible and engaging for all learners. 
+                    As a first-generation college student and mother of two, I understand the power 
+                    of education to transform lives.
+                </p>
+
+                <a href="about.html" class="button">Learn More About Me</a>
             </div>
-        </section>
 
-        <!-- Main content area -->
-        <section class="page-content">
-            <div class="container">
-                <!-- Example content blocks you can reuse -->
-                <article class="card">
-                    <h2 class="card-title">Section Heading</h2>
-                    <p>
-                        Replace this content with your page’s information. Keep paragraphs short and use headings for clarity.
-                    </p>
-                </article>
-
-                <article class="card">
-                    <h2 class="card-title">Another Section</h2>
-                    <ul class="clean-list">
-                        <li>Bullet point example</li>
-                        <li>Bullet point example</li>
-                        <li>Bullet point example</li>
-                    </ul>
-                </article>
-
-                <!-- Optional: grid area for projects/skills -->
-                <section class="grid">
-                    <article class="card">
-                        <h3 class="card-title">Grid Item</h3>
-                        <p>Use this layout for projects, skills, or highlights.</p>
-                        <a class="button" href="#" aria-label="Example link">Learn More</a>
-                    </article>
-
-                    <article class="card">
-                        <h3 class="card-title">Grid Item</h3>
-                        <p>Duplicate and edit these cards as needed.</p>
-                        <a class="button" href="#" aria-label="Example link">Learn More</a>
-                    </article>
-
-                    <article class="card">
-                        <h3 class="card-title">Grid Item</h3>
-                        <p>Keep descriptions short and consistent.</p>
-                        <a class="button" href="#" aria-label="Example link">Learn More</a>
-                    </article>
-                </section>
+            <div class="hero-image">
+                <img src="images/Robin_home_800.png" alt="Robin Kelley portrait">
             </div>
-        </section>
-    </main>
+
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="highlights">
+        <div class="container grid">
+
+            <article class="card">
+                <h2 class="card-title">Teaching</h2>
+                <p>High school Computer Science instructor focused on hands-on learning and problem solving.</p>
+            </article>
+
+            <article class="card">
+                <h2 class="card-title">Technical Skills</h2>
+                <p>Experience with C++, JavaScript, Python, SQL, Web Development, and Data Analysis.</p>
+            </article>
+
+            <article class="card">
+                <h2 class="card-title">Academic Excellence</h2>
+                <p>Maintaining a 4.0 GPA while balancing family, career, and education.</p>
+            </article>
+
+        </div>
+    </section>
+
+</main>
 
     <footer class="site-footer">
         <div class="container footer-inner">
