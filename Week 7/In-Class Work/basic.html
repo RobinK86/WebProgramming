@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Event Listener</title>
+    </head>
+    <body>
+
+        <h2>Basic Form</h2>
+        <form id="taskForm">
+
+            <input type="text" id="taskInput" placeholder="Enter a Task">
+            <button type="submit">Add Task</button>
+        </form>
+
+        <script>
+            // 1. Select the form element
+            let form = document.getElementById("taskForm");
+
+            // Action for form
+            form.action = "https://google.com";
+            // 2. Add an event listener to the form
+            form.addEventListener("submit", function(event) {
+                //event.preventDefault(); // Prevents the default form submission behavior
+                console.log("Form was submitted..!");
+            });
+        </script>
+
+    </body>
+</html>
