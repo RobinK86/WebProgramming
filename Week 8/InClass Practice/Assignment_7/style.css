@@ -1,0 +1,17 @@
+body {
+  font-family: Arial, sans-serif;
+}
+ 
+.error {
+  color: red;
+}
+ 
+li {
+  margin: 8px 0;
+  cursor: pointer;
+}
+ 
+.done {
+  text-decoration: line-through;
+  color: gray;
+}
