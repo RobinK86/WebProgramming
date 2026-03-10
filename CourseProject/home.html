@@ -1,5 +1,5 @@
 <!--
-File Name: template.html
+File Name: home.html
 Student Name: Robin Kelley
 Course: Web Programming
 Date: 02/17/2026
@@ -28,7 +28,7 @@ Description: Home Page with introduction and navigation to other pages.
 
     <header class="site-header">
         <div class="container header-inner">
-            <a class="brand" href="index.html" aria-label="Go to Home">
+           <a class="brand" href="home.html" aria-label="Go to Home">
                 <span class="brand-name">Robin Kelley</span>
                 <span class="brand-tag">Aspiring CS Educator</span>
             </a>
@@ -38,7 +38,7 @@ Description: Home Page with introduction and navigation to other pages.
                 </button>
                 <ul id="nav-list" class="nav-list">
                 <!-- Add class="active" to the page you're on -->
-                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="home.html" class="nav-link active">Home</a></li>
                 <li><a href="about.html" class="nav-link">About</a></li>
                 <li><a href="projects.html" class="nav-link">Projects</a></li>
                 <li><a href="teaching.html" class="nav-link">Teaching Experience</a></li>
@@ -59,11 +59,11 @@ Description: Home Page with introduction and navigation to other pages.
             <div class="hero-text">
                 <h1>Hi, I'm Robin Kelley</h1>
                 <p class="hero-tagline">
-                    Computer Science Educator • Teaching Assistant • Lifelong Learner
+                    <span class="auto-type"></span>
                 </p>
 
                 <p class="hero-description">
-                    I am a high school Computer Science teacher and Programming I Teaching Assistant 
+                    I am a Programming I Teaching Assistant and a future Computer Science educator,
                     passionate about making technology accessible and engaging for all learners. 
                     As a first-generation college student and mother of two, I understand the power 
                     of education to transform lives.
@@ -117,6 +117,7 @@ Description: Home Page with introduction and navigation to other pages.
     </footer>
 
     <!-- JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="script.js"></script>
 </body>
 </html>

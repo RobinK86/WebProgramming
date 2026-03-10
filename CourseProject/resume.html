@@ -1,0 +1,170 @@
+<!--
+File Name: resume.html
+Student Name: Robin Kelley
+Course: Web Programming
+Date: 02/22/2026
+Description: Resume page for Robin Kelley's portfolio website.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Resume page for Robin Kelley, highlighting education, experience, and professional background." />
+    <title>Resume | Robin Kelley Portfolio</title>
+
+    <!-- Google Font (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="home.html" aria-label="Go to Home">
+                <span class="brand-name">Robin Kelley</span>
+                <span class="brand-tag">Aspiring CS Educator</span>
+            </a>
+
+            <nav class="nav" aria-label="Primary Navigation">
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list">
+                    Menu
+                </button>
+
+                <ul id="nav-list" class="nav-list">
+                    <li><a href="home.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="teaching.html" class="nav-link">Teaching Experience</a></li>
+                    <li><a href="skills.html" class="nav-link">Skills</a></li>
+                    <li><a href="resume.html" class="nav-link active">Resume</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">Resume</h1>
+                <p class="page-subtitle">
+                    A summary of my education, professional experience, and career goals in computer science education.
+                </p>
+            </div>
+        </section>
+
+        <section class="page-content">
+            <div class="container">
+                <article class="card">
+                    <h2 class="card-title">Education</h2>
+                    <p><strong>Arkansas Tech University</strong> | 2023 - Current</p>
+                    <div class="resume-role">
+                    <p>
+                        Pursuing a Bachelor of Science in Information Technology with a minor in Secondary Education. Expected graduation in 2027.
+                    </p>
+                </div>
+                </article>
+
+                <article class="card">
+                    <h2 class="card-title">Professional Experience</h2>
+
+                    <p><strong>Arkansas Tech University</strong> | 2025 - Current</p>
+
+                    <div class="resume-role">
+                        <p><strong>Teaching Assistant - Programming I</strong></p>
+                        <p>
+                            Assisted students during lab sessions by answering questions, troubleshooting code, and reinforcing programming concepts. Supported course instruction through grading assignments and contributing to the development of instructional materials used in teaching.
+                        </p>
+                    </div>
+
+                    <div class="resume-role">
+                        <p><strong>Computer Science Tutor</strong></p>
+                        <p>
+                            Provided one-on-one academic support to students in computer science courses by explaining programming concepts, helping debug code, and guiding students through problem-solving strategies.
+                        </p>
+                    </div>
+
+                    <p><strong>Asurion</strong> | 2018 - 2022</p>
+
+                    <div class="resume-role">
+                        <p><strong>Senior Data Analyst</strong></p>
+                        <p>
+                            Responsible for the creation and management of Power BI dashboards, gathering data with complex SQL queries,
+                            and compiling and presenting results to multiple levels of the company.
+                        </p>
+                    </div>
+
+                    <div class="resume-role">
+                        <p><strong>Data Analyst</strong></p>
+                        <p>
+                            Reviewed project-related data to improve key metrics and provided in-depth findings and recommendations for improvement.
+                        </p>
+                    </div>
+
+                    <div class="resume-role">
+                        <p><strong>Survey Verbatim Coder</strong></p>
+                        <p>
+                            Reviewed customer survey responses related to products and representative interactions, then compiled and presented results
+                            with recommendations for improvement.
+                        </p>
+                    </div>
+
+                    <div class="resume-role">
+                        <p><strong>Call Center Representative</strong></p>
+                        <p>
+                            Managed frontline customer calls, gathered important information, and provided support while maintaining required performance,
+                            customer satisfaction, and quality standards.
+                        </p>
+                    </div>
+                </article>
+
+                <section class="grid">
+                    <article class="card">
+                        <h3 class="card-title">Technical Background</h3>
+                        <p>
+                            Experience with data analysis, dashboards, SQL, and technology-driven problem solving.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3 class="card-title">Teaching Focus</h3>
+                        <p>
+                            Dedicated to making computer science understandable, practical, and encouraging for students.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3 class="card-title">Strengths</h3>
+                        <p>
+                            Communication, persistence, analysis, organization, and a strong commitment to lifelong learning.
+                        </p>
+                    </article>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p class="footer-text">
+                &copy; <span id="year"></span> Robin Kelley • Aspiring Computer Science Educator
+            </p>
+            <p class="footer-links">
+                <a href="contact.html">Contact</a>
+                <span aria-hidden="true">•</span>
+                <a href="resume.html">Resume</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!--
+File Name: skills.html
+Student Name: Robin Kelley
+Course: Web Programming
+Date: 02/17/2026
+Description: Skills page for portfolio website.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Skills page for Robin Kelley portfolio website." />
+    <title>Skills | Robin Kelley Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="home.html" aria-label="Go to Home">
+                <span class="brand-name">Robin Kelley</span>
+                <span class="brand-tag">Aspiring CS Educator</span>
+            </a>
+
+            <nav class="nav" aria-label="Primary Navigation">
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list">
+                    Menu
+                </button>
+
+                <ul id="nav-list" class="nav-list">
+                    <li><a href="home.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="projects.html" class="nav-link">Projects</a></li>
+                    <li><a href="teaching.html" class="nav-link">Teaching Experience</a></li>
+                    <li><a href="skills.html" class="nav-link active">Skills</a></li>
+                    <li><a href="resume.html" class="nav-link">Resume</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="page-hero">
+            <div class="container">
+                <h1 class="page-title">Skills</h1>
+                <p class="page-subtitle">
+                    An overview of my technical, academic, and teaching-related skills.
+                </p>
+            </div>
+        </section>
+
+        <section class="page-content">
+            <div class="container">
+                <article class="card">
+                    <h2 class="card-title">Work in Progress</h2>
+                    <p>
+                        This page is currently under construction and will be updated with programming, technical, and instructional skills.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p class="footer-text">
+                &copy; <span id="year"></span> Robin Kelley • Aspiring Computer Science Educator
+            </p>
+            <p class="footer-links">
+                <a href="contact.html">Contact</a>
+                <span aria-hidden="true">•</span>
+                <a href="resume.html">Resume</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
