@@ -30,6 +30,7 @@
 }
 
 /* ---------- Dark Mode Variables ---------- */
+html.dark-mode,
 body.dark-mode {
     --bg: #111218;
     --surface: #1a1d26;
@@ -113,6 +114,19 @@ a {
 .clean-list {
     margin: 0;
     padding-left: 18px;
+}
+
+/* ---------- Card Subheading ---------- */
+.card-subtitle {
+    margin-top: 16px;
+}
+
+/* ---------- Project Links ---------- */
+.project-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+    flex-wrap: wrap;
 }
 
 /* ---------- Buttons / Links ---------- */
@@ -350,13 +364,28 @@ a {
     color: var(--muted);
 }
 
+.page-hero-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.button-download {
+    white-space: nowrap;
+    flex-shrink: 0;
+    padding: 8px 16px;
+    font-size: 0.875rem;
+}
+
 /* ---------- Main Content ---------- */
 .page-content {
     padding: 26px 0 44px;
     background: var(--bg);
 }
 
-.page-content > .container > .card + .card {
+.page-content > .container > .card + .card,
+.page-content > .container > .grid + .card {
     margin-top: 16px;
 }
 
@@ -418,6 +447,71 @@ a {
 .footer-links a:hover,
 .footer-links a:focus {
     text-decoration: underline;
+}
+
+/* ---------- Contact Form ---------- */
+.contact-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--text);
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px 14px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: var(--surface-2);
+    color: var(--text);
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.field-error {
+    font-size: 0.85rem;
+    color: #e05252;
+}
+
+.form-success {
+    margin-top: 12px;
+    padding: 12px 16px;
+    border-radius: 12px;
+    background: var(--soft-2);
+    color: var(--text);
+    font-weight: 600;
+}
+
+.form-error {
+    margin-top: 12px;
+    padding: 12px 16px;
+    border-radius: 12px;
+    background: #fde8e8;
+    color: #e05252;
+    font-weight: 600;
 }
 
 /* ---------- Responsive ---------- */

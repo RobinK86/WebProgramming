@@ -19,6 +19,11 @@ Description: Skills page for portfolio website.
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.css" />
+    <script>
+        if (localStorage.getItem("theme") === "dark") {
+            document.documentElement.classList.add("dark-mode");
+        }
+    </script>
 </head>
 
 <body>
@@ -44,7 +49,7 @@ Description: Skills page for portfolio website.
                     <li><a href="skills.html" class="nav-link active">Skills</a></li>
                     <li><a href="resume.html" class="nav-link">Resume</a></li>
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
-                    <button id="darkModeToggle" class="theme-toggle">Dark Mode</button>
+                    <li><button id="darkModeToggle" class="theme-toggle">Dark Mode</button></li>
                 </ul>
             </nav>
         </div>
@@ -60,16 +65,54 @@ Description: Skills page for portfolio website.
             </div>
         </section>
 
-        <section class="page-content">
-            <div class="container">
-                <article class="card">
-                    <h2 class="card-title">Work in Progress</h2>
-                    <p>
-                        This page is currently under construction and will be updated with programming, technical, and instructional skills.
-                    </p>
-                </article>
-            </div>
-        </section>
+       <section class="page-content">
+        <div class="container">
+
+            <article class="card">
+                <h2 class="card-title">Teaching & Instructional Skills</h2>
+                <ul class="clean-list">
+                    <li>Student Engagement</li>
+                    <li>Student-Centered Learning</li>
+                    <li>Classroom Management</li>
+                    <li>Communication (Technical & Non-Technical)</li>
+                    <li>Public Speaking</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h2 class="card-title">Technical & CS Skills</h2>
+                <ul class="clean-list">
+                    <li>C++</li>
+                    <li>Python</li>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                    <li>Web Development</li>
+                    <li>Mobile Application Development</li>
+                    <li>Database Administration</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h2 class="card-title">Data & Analytics</h2>
+                <ul class="clean-list">
+                    <li>Data Analysis</li>
+                    <li>Microsoft Power BI</li>
+                    <li>Microsoft Excel</li>
+                    <li>Spreadsheets</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h2 class="card-title">Professional Skills</h2>
+                <ul class="clean-list">
+                    <li>Attention to Detail</li>
+                    <li>Project Management</li>
+                    <li>Computer Literacy</li>
+                </ul>
+            </article>
+
+        </div>
+    </section>
     </main>
 
     <footer class="site-footer">

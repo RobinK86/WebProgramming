@@ -19,6 +19,11 @@ Description: Teaching experience page for portfolio website.
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.css" />
+    <script>
+    if (localStorage.getItem("theme") === "dark") {
+        document.documentElement.classList.add("dark-mode");
+    }
+</script>
 </head>
 
 <body>
@@ -44,7 +49,7 @@ Description: Teaching experience page for portfolio website.
                     <li><a href="skills.html" class="nav-link">Skills</a></li>
                     <li><a href="resume.html" class="nav-link">Resume</a></li>
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
-                    <button id="darkModeToggle" class="theme-toggle">Dark Mode</button>
+                    <li><button id="darkModeToggle" class="theme-toggle">Dark Mode</button></li>
                 </ul>
             </nav>
         </div>
@@ -59,17 +64,85 @@ Description: Teaching experience page for portfolio website.
                 </p>
             </div>
         </section>
-
         <section class="page-content">
-            <div class="container">
+        <div class="container">
+            <article class="card">
+                <h2 class="card-title">Teaching Assistant — Programming I</h2>
+                <p><strong>Arkansas Tech University</strong> | 2025 - Present</p>
+                <p>
+                    Serving as a Teaching Assistant for Programming I, a course designed for freshman students 
+                    with little to no prior programming experience. The course covers the fundamentals of C++ 
+                    from the ground up through core programming concepts.
+                </p>
+                <h3 class="card-title card-subtitle">Topics Covered</h3>
+                <ul class="clean-list">
+                    <li>Introduction to C++ and programming fundamentals</li>
+                    <li>Conditionals and decision making</li>
+                    <li>Loops and iteration</li>
+                    <li>Arrays and data storage</li>
+                    <li>Functions and modular programming</li>
+                </ul>
+                <h3 class="card-title card-subtitle">Responsibilities</h3>
+                <ul class="clean-list">
+                    <li>Assisting in the delivery of course topics during lab sessions</li>
+                    <li>Creating example programs to demonstrate programming concepts</li>
+                    <li>Grading assignments and providing constructive feedback</li>
+                    <li>Debugging student code and identifying errors</li>
+                    <li>Providing one-on-one assistance to students who need additional support</li>
+                </ul>
+            </article>
+            <article class="card">
+                <h2 class="card-title">Computer Science Tutor</h2>
+                <p><strong>Arkansas Tech University</strong> | 2025 - Present</p>
+                <p>
+                    Available for tutoring sessions across all computer science courses I have successfully 
+                    completed. Sessions are booked individually and tailored to each student's needs, whether 
+                    that is building understanding of a concept, working through homework, or preparing for 
+                    an upcoming exam.
+                </p>
+                <h3 class="card-title card-subtitle">Courses Available for Tutoring</h3>
+                <ul class="clean-list">
+                    <li>Programming I & II</li>
+                    <li>Data Structures</li>
+                    <li>Python</li>
+                    <li>Database Implementation</li>
+                    <li>Scripting Languages</li>
+                    <li>Web Technologies</li>
+                    <li>Mobile Technologies</li>
+                </ul>
+            </article>
+            <article class="card">
+                <h2 class="card-title">Teaching Philosophy</h2>
+                <p>
+                    I believe that effective teaching is about more than just delivering content. It's about creating an environment where students feel supported, encouraged, and empowered to learn and grow.
+                </p>
+                <p>
+                    My approach to teaching focuses on building strong relationships with students, understanding their individual needs and learning styles, and providing personalized support to help them succeed.
+                </p>
+                <p>
+                    I am committed to fostering a classroom culture that values curiosity, creativity, and persistence. I want my students to feel confident in their abilities and excited about the possibilities that computer science offers.
+                </p>
+            </article>
+            <section class="grid">
                 <article class="card">
-                    <h2 class="card-title">Work in Progress</h2>
-                    <p>
-                        This page is currently being developed and will include teaching experience, instructional support roles, and tutoring information.
-                    </p>
+                    <h3 class="card-title">Concept Building</h3>
+                    <p>Helping students understand the why behind programming concepts, not just the how.</p>
                 </article>
-            </div>
-        </section>
+
+                <article class="card">
+                    <h3 class="card-title">Homework Support</h3>
+                    <p>Guiding students through assignments with a focus on learning rather than just getting answers.</p>
+                </article>
+
+                <article class="card">
+                    <h3 class="card-title">Exam Preparation</h3>
+                    <p>Working through practice problems and reviewing material to help students feel confident and prepared.</p>
+                </article>
+            </section>
+ 
+
+        </div>
+    </section>
     </main>
 
     <footer class="site-footer">

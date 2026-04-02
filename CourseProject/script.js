@@ -3,6 +3,16 @@
 // 03/13/2026
 
 document.addEventListener("DOMContentLoaded", () => {
+    // Populate footer year
+    const yearSpan = document.getElementById("year");
+    if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+
+    // Formspree contact form
+    const contactForm = document.getElementById("contact-form");
+    if (contactForm && typeof formspree !== "undefined") {
+        formspree("initForm", { formElement: "#contact-form", formId: "meeplpwy" });
+    }
+
     const autoType = document.querySelector(".auto-type");
 
     if (autoType && typeof Typed !== "undefined") {

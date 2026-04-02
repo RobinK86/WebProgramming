@@ -19,6 +19,11 @@ Description: Projects page for portfolio website.
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.css" />
+    <script>
+    if (localStorage.getItem("theme") === "dark") {
+        document.documentElement.classList.add("dark-mode");
+    }
+</script>
 </head>
 
 <body>
@@ -44,7 +49,7 @@ Description: Projects page for portfolio website.
                     <li><a href="skills.html" class="nav-link">Skills</a></li>
                     <li><a href="resume.html" class="nav-link">Resume</a></li>
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
-                    <button id="darkModeToggle" class="theme-toggle">Dark Mode</button>
+                    <li><button id="darkModeToggle" class="theme-toggle">Dark Mode</button></li>
                 </ul>
             </nav>
         </div>
@@ -62,12 +67,108 @@ Description: Projects page for portfolio website.
 
         <section class="page-content">
             <div class="container">
+
                 <article class="card">
-                    <h2 class="card-title">Work in Progress</h2>
+                    <h2 class="card-title">Task Planner Web App</h2>
+                    <p><strong>Django, Python, PostgreSQL</strong></p>
+                    <img src="images/todo-planner.png" alt="Task Planner app showing calendar view" class="project-image">
                     <p>
-                        This page is currently under development and will be updated with project examples, coursework, and technical work.
+                        A full-featured task management web application built with Django and Python, backed by a 
+                        PostgreSQL database and deployed live on Render. Designed to manage assignments, work 
+                        appointments, and personal tasks all in one place.
                     </p>
+                    <ul class="clean-list">
+                        <li>Add tasks with subtasks and track progress with visual progress bars</li>
+                        <li>Calendar view with due date indicators</li>
+                        <li>Filter tasks by today, overdue, upcoming, or by clicking a specific day</li>
+                        <li>User authentication with personalized task management</li>
+                        <li>Currently live and in active use</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://todo-planner-wtzo.onrender.com" target="_blank" rel="noopener noreferrer" class="button">Live Demo</a>
+                        <a href="https://github.com/RobinK86/todo_planner" target="_blank" rel="noopener noreferrer" class="button secondary">View on GitHub</a>
+                    </div>
                 </article>
+
+                <article class="card">
+                    <h2 class="card-title">Cents and Sensibility</h2>
+                    <p><strong>Dart, Flutter</strong></p>
+                    <img src="images/cents-sensibility.png" alt="Cents and Sensibility app showing calendar and card due dates" class="project-image">
+                    <p>
+                        A mobile budget application built with Dart and Flutter for managing credit card finances. 
+                        Designed to give users a clear picture of their upcoming payment obligations in one place.
+                    </p>
+                    <ul class="clean-list">
+                        <li>Enter and manage credit card information including balances and minimum payments</li>
+                        <li>Track due dates with a built-in calendar view</li>
+                        <li>View upcoming payments in a consolidated list</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/RobinK86/centsandsense" target="_blank" rel="noopener noreferrer" class="button">View on GitHub</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h2 class="card-title">Purr & Pour Cat Cafe</h2>
+                    <p><strong>C++</strong></p>
+                    <img src="images/cpp-example.png" alt="Purr and Pour Cat Cafe C++ program showing menu and receipt output" class="project-image">
+                    <p>
+                        A full business simulation program built in C++ as an end-of-course capstone project for 
+                        Programming I. The program runs an interactive ordering system for a cat-themed cafe, 
+                        handling menu display, order processing, tax calculation, and formatted receipt generation.
+                    </p>
+                    <ul class="clean-list">
+                        <li>Interactive console menu with drinks and flavor syrups</li>
+                        <li>Order processing with up to 5 items per order</li>
+                        <li>Automatic tax calculation and total formatting</li>
+                        <li>Outputs a formatted receipt to a text file</li>
+                        <li>ASCII art cafe logo for a polished user experience</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/RobinK86" target="_blank" rel="noopener noreferrer" class="button">View on GitHub</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h2 class="card-title">C++ Teaching Examples</h2>
+                    <p><strong>C++</strong></p>
+                    <p>
+                        A collection of scaffolding programs created to support instruction in Programming I at 
+                        Arkansas Tech University. Each example is designed to isolate and demonstrate a single 
+                        core concept to help freshman students build understanding step by step.
+                    </p>
+                    <ul class="clean-list">
+                        <li>Conditionals and decision making</li>
+                        <li>Loops and iteration</li>
+                        <li>Arrays and data storage</li>
+                        <li>Functions and modular programming</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/RobinK86" target="_blank" rel="noopener noreferrer" class="button">View on GitHub</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <h2 class="card-title">Portfolio Website</h2>
+                    <img src="images/portfolio-screenshot.png" alt="Robin Kelley portfolio website home page" class="project-image">
+                    <p><strong>HTML, CSS, JavaScript</strong></p>
+                    <p>
+                        This portfolio website, built from scratch as part of a Web Programming course at 
+                        Arkansas Tech University. Designed with accessibility, responsiveness, and clean 
+                        design in mind.
+                    </p>
+                    <ul class="clean-list">
+                        <li>Responsive layout that works across all screen sizes</li>
+                        <li>Dark mode with flash-free theme persistence using localStorage</li>
+                        <li>Accessible navigation with skip links and ARIA labels</li>
+                        <li>Typed.js animated hero tagline</li>
+                        <li>Formspree-powered contact form</li>
+                    </ul>
+                    <div class="project-links">
+                        <a href="https://github.com/RobinK86/WebProgramming" target="_blank" rel="noopener noreferrer" class="button">View on GitHub</a>
+                    </div>
+                </article>
+
             </div>
         </section>
     </main>

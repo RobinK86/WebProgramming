@@ -21,6 +21,11 @@ Description: Resume page for Robin Kelley's portfolio website.
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css" />
+    <script>
+    if (localStorage.getItem("theme") === "dark") {
+        document.documentElement.classList.add("dark-mode");
+    }
+</script>
 </head>
 
 <body>
@@ -46,7 +51,7 @@ Description: Resume page for Robin Kelley's portfolio website.
                     <li><a href="skills.html" class="nav-link">Skills</a></li>
                     <li><a href="resume.html" class="nav-link active">Resume</a></li>
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
-                    <button id="darkModeToggle" class="theme-toggle">Dark Mode</button>
+                    <li><button id="darkModeToggle" class="theme-toggle">Dark Mode</button></li>
                 </ul>
             </nav>
         </div>
@@ -56,9 +61,14 @@ Description: Resume page for Robin Kelley's portfolio website.
         <section class="page-hero">
             <div class="container">
                 <h1 class="page-title">Resume</h1>
+            <div class="page-hero-inner">
                 <p class="page-subtitle">
                     A summary of my education, professional experience, and career goals in computer science education.
                 </p>
+                <a href="resume.pdf" download class="button button-download">
+                    Download Resume (PDF)
+                </a>
+            </div>
             </div>
         </section>
 

@@ -21,6 +21,11 @@ Description: Home Page with introduction and navigation to other pages.
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css" />
+    <script>
+    if (localStorage.getItem("theme") === "dark") {
+        document.documentElement.classList.add("dark-mode");
+    }
+</script>
 </head>
 
 <body>
@@ -46,7 +51,7 @@ Description: Home Page with introduction and navigation to other pages.
                 <li><a href="skills.html" class="nav-link">Skills</a></li>
                 <li><a href="resume.html" class="nav-link">Resume</a></li>
                 <li><a href="contact.html" class="nav-link">Contact</a></li>
-                <button id="darkModeToggle" class="theme-toggle">Dark Mode</button>
+                <li><button id="darkModeToggle" class="theme-toggle">Dark Mode</button></li>
                 </ul>
             </nav>
         </div>

@@ -21,6 +21,11 @@ Description: About Me page with background information, academic journey, and a 
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css" />
+    <script>
+    if (localStorage.getItem("theme") === "dark") {
+        document.documentElement.classList.add("dark-mode");
+    }
+</script>
 </head>
 
 <body>
@@ -46,7 +51,7 @@ Description: About Me page with background information, academic journey, and a 
                     <li><a href="skills.html" class="nav-link">Skills</a></li>
                     <li><a href="resume.html" class="nav-link">Resume</a></li>
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
-                    <button id="darkModeToggle" class="theme-toggle">Dark Mode</button>
+                    <li><button id="darkModeToggle" class="theme-toggle">Dark Mode</button></li>
                 </ul>
             </nav>
         </div>
@@ -128,7 +133,7 @@ Description: About Me page with background information, academic journey, and a 
 
                     <video controls width="100%">
                         <source src="media/AboutMe.mp4" type="video/mp4">
-                        <source src="media/AboutMe.ogg" type="video/ogg">
+                        <source src="media/AboutMe.ogv" type="video/ogg">
                         Your browser does not support the video tag.
                     </video>
                 </article>
