@@ -1,0 +1,98 @@
+/* Page background and default font */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main app container */
+.app-container {
+  max-width: 500px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading style */
+.app-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input and button section */
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+/* Input field style */
+.task-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* Add button style */
+.add-button {
+  padding: 10px 16px;
+  border: none;
+  background-color: #0077ff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Button hover effect */
+.add-button:hover {
+  background-color: #005fd1;
+}
+
+/* Remove default list styling */
+.task-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Individual task item */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9fafb;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+
+/* Task text */
+.task-text {
+  cursor: pointer;
+}
+
+/* Completed task */
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Delete button */
+.delete-button {
+  padding: 6px 10px;
+  border: none;
+  background-color: crimson;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Delete button hover */
+.delete-button:hover {
+  background-color: darkred;
+}
