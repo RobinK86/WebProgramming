@@ -7,10 +7,43 @@ document.addEventListener("DOMContentLoaded", () => {
     const yearSpan = document.getElementById("year");
     if (yearSpan) yearSpan.textContent = new Date().getFullYear();
 
-    // Formspree contact form
+    // Supabase contact form
     const contactForm = document.getElementById("contact-form");
-    if (contactForm && typeof formspree !== "undefined") {
-        formspree("initForm", { formElement: "#contact-form", formId: "meeplpwy" });
+    if (contactForm && typeof supabase !== "undefined") {
+        const db = supabase.createClient(
+            "https://byierohvhreithcrcagg.supabase.co",
+            "sb_publishable_AkLZeP-lOqT4P7Z8feY7mg_1DKtv_Vh"
+        );
+
+        contactForm.addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            const submitBtn = contactForm.querySelector('[type="submit"]');
+            const successMsg = document.querySelector(".form-success");
+            const errorMsg = document.querySelector(".form-error");
+
+            submitBtn.disabled = true;
+            submitBtn.textContent = "Sending...";
+
+            const { error } = await db.from("contact_submissions").insert([{
+                name: document.getElementById("name").value.trim(),
+                email: document.getElementById("email").value.trim(),
+                message: document.getElementById("message").value.trim()
+            }]);
+
+            if (error) {
+                errorMsg.textContent = "Something went wrong. Please try again.";
+                errorMsg.style.display = "block";
+                successMsg.style.display = "none";
+            } else {
+                successMsg.style.display = "block";
+                errorMsg.style.display = "none";
+                contactForm.reset();
+            }
+
+            submitBtn.disabled = false;
+            submitBtn.textContent = "Send Message";
+        });
     }
 
     const autoType = document.querySelector(".auto-type");
