@@ -72,6 +72,27 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+    const navToggle = document.querySelector(".nav-toggle");
+    const navList = document.getElementById("nav-list");
+
+    if (navToggle && navList) {
+        navToggle.addEventListener("click", () => {
+            const isOpen = navList.classList.toggle("open");
+            navToggle.classList.toggle("open", isOpen);
+            navToggle.setAttribute("aria-expanded", String(isOpen));
+            navToggle.setAttribute("aria-label", isOpen ? "Close navigation menu" : "Open navigation menu");
+        });
+
+        document.addEventListener("click", (e) => {
+            if (!navToggle.contains(e.target) && !navList.contains(e.target)) {
+                navList.classList.remove("open");
+                navToggle.classList.remove("open");
+                navToggle.setAttribute("aria-expanded", "false");
+                navToggle.setAttribute("aria-label", "Open navigation menu");
+            }
+        });
+    }
+
     const darkModeButton = document.getElementById("darkModeToggle");
 
     if (localStorage.getItem("theme") === "dark") {

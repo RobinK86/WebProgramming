@@ -242,13 +242,36 @@ a {
 
 .nav-toggle {
     display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
     padding: 10px 12px;
     border-radius: 12px;
     border: 1px solid var(--border);
     background: var(--surface);
-    color: var(--text);
-    font-weight: 600;
     cursor: pointer;
+}
+
+.hamburger-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--text);
+    border-radius: 2px;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+.nav-toggle.open .hamburger-bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.nav-toggle.open .hamburger-bar:nth-child(2) {
+    opacity: 0;
+    transform: scaleX(0);
+}
+
+.nav-toggle.open .hamburger-bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
 }
 
 .nav-list {
@@ -530,7 +553,7 @@ a {
     }
 
     .nav-toggle {
-        display: inline-block;
+        display: flex;
     }
 
     .nav-list {
